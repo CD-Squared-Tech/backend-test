@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CD Tech - Working Together</title>
+        {% load static %}
+
+        <!-- Font Awesome -->
+        <script
+            src="https://kit.fontawesome.com/15a6eaf0f9.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Javascript Link -->
+        <link rel="stylesheet" type="text/css" href="{% static 'styles/index.css' %}"/>
+        <link rel="icon" type="image/svg+xml" href="resources/images/logo-stacked.svg" />
+        <!-- favicon displays as browser tab art -->
+        <!-- Google CAPTCHA V3-->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script> 
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#contact">Get in Touch</a></li>
+                    <li><a href="#home">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+        {% block content %}{% endblock %}
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        <script type="module" src="{% static 'scripts/index.js' %}"></script>
+        <script>
+            function onSubmit(token) {
+              document.getElementById("contact_form").submit();
+            }
+        </script>  
+    </body>
+</html>
