@@ -2,30 +2,29 @@
 {% load static %}
 
 {% block content %}
-  <!-- Main Page Wrapper -->
-  <div class="mainPageWrapper">
+<!-- Main Page Wrapper -->
+<div class="mainPageWrapper">
     <!-- Sidebar Wrapper -->
     <div class="sidebarWrapper">
       <div class="sidebar">
         <div class="logo-container">
-          <img class=" stacked-logo" src="{% static 'images/logo-stacked.svg' %}" alt="logo" />
-          <img class=" horizontal-logo" src="{% static 'images/logo-horizontal.svg' %}" alt="logo" />
+        <img class="stacked-logo" src="{% static 'images/logo-stacked.svg' %}" alt="logo" />
+        <img class="horizontal-logo" src="{% static 'images/logo-horizontal.svg' %}" alt="logo" />
         </div>
         <div class="socials">
-          <ul>
-            <a href="https://www.linkedin.com/company/cd-tech-chattanooga/"><li>
+          <ul class="socials-list">
+            <a href=""><li>
               <i class="fa-brands fa-linkedin-in"></i>
             </li></a>
             <a href=""><li>
               <i class="fa-brands fa-discord"></i>
             </li></a>
-            <a href=""><li>
-              <i class="fa-brands fa-facebook-f"></i>
+            <a href=""><li class="meetup-icon">
+              <i class="fa-brands fa-meetup"></i>
             </li></a>
           </ul>
         </div>
-        <div class="copyright" view="desktop">
-          <p>Copyright ©CD Techies</p></div>
+        <div class="copyright" view="desktop"><p>Copyright © CD Tech 2023</p></div>
         <div class="attribution" view="desktop">
           <a href="https://www.flaticon.com/free-animated-icons" title="animated icons">Icons by Freepik</a>
         </div>
@@ -35,85 +34,82 @@
     <!-- Main Content Wrapper -->
     <main class="mainContentWrapper">
       <div class="content">
-      <!-- Content Sections Start Here -->
+        <!-- Content Sections Start Here -->
 
-      <!-- Hero Section -->
-      <section id="home" class="hero">
-        <div ></div>
-        <div class="heroContent">
-          <h1>CDTech Chattanooga</h1>
-          <p>
-            Chattanoogans with non-traditional backgrounds 
-            changing the landscape of breaking into the Tech Industry.
-          </p>
-          <!-- pop-up dialog box, containing a form -->
-          <dialog id="learnMore">
-            <!-- <p>Nope.</p> -->
-            <div class="tenor-gif-embed" data-postid="13843355" data-share-method="host" data-aspect-ratio="1.29032" data-width="100%"><a href="https://tenor.com/view/nope-not-a-chance-no-gif-13843355">Nope Not A Chance GIF</a>from <a href="https://tenor.com/search/nope-gifs">Nope GIFs</a></div> 
-            <div>
-              <button id="cancel" type="reset">Ah ah ah, you didn't say the magic word</button>
-            </div>
-          </dialog>
-
-          <button id="cdBtn" class="cdBtn">Learn More</button>
-        </div>
-      </section>
-
-      <!-- Core Values Section -->
-      <section class="values">
-        <div class="values-container">
-          <h2 class="values-title">Our Core <span class="values-script">Values</span></h2>
-            <!-- Start values grid -->
-            <div class="values-grid">
-              <div class="values-img">
-                  <img class="group-img" src="{% static 'images/group-pic.jpg' %}" alt="group picture"/>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+          <div class="heroContent">
+            <h1>Coming Together to Break Into Technology</h1>
+            <p>Welcome to our vibrant community of determined Chattanoogans with non-traditional backgrounds, all sharing the common aspiration to break into the dynamic world of technology as developers.
+            </p>
+            <!-- pop-up dialog box, containing a form -->
+            <!-- <dialog id="learnMore">
+              <div class="tenor-gif-embed" data-postid="13843355" data-share-method="host" data-aspect-ratio="1.29032" data-width="100%"><a href="https://tenor.com/view/nope-not-a-chance-no-gif-13843355">Nope Not A Chance GIF</a>from <a href="https://tenor.com/search/nope-gifs">Nope GIFs</a></div> 
+              <div>
+                <button id="cancel" type="reset">Ah ah ah, you didn't say the magic word</button>
               </div>
-                <!-- Value 1 -->
-                <div class="value value-1">
-                  <div class="value-icon">
-                      <img class="animated-icon" src="{% static 'images/teamwork.gif' %}" alt="animated icon"/>
-                  </div>
-                    <h3 class="value-heading">
-                        Collaboration + Teamwork
-                    </h3>
-                      <p class="value-description">
-                          By working together and leveraging everyone's strengths, we amplify our impact and create innovative solutions that address the unique needs of non-profits and aspiring developers.
-                      </p>
-                </div>
-                <!-- Value 2 -->
-                <div class="value value-2">
-                  <div class="value-icon">
-                      <img class="animated-icon" src="{% static 'images/idea.gif' %}" alt="lightbulb"/>
-                  </div>
-                  <h3 class="value-heading">Inclusivity</h3>
-                      <p class="value-description">
-                          We welcome diverse perspectives, recognizing that a variety of perspectives, backgrounds, and experiences drive creativity and lead to well-rounded solutions.
-                      </p>
-                </div>
-                <!-- Value 3 -->
-                <div class="value value-3">
-                  <div class="value-icon">
-                      <img class="animated-icon" src="{% static 'images/handshake.gif' %}" alt="animated handshake"/>
-                  </div>
-                    <h3 class="value-heading">Mentorship</h3>
-                        <p class="value-description">
-                            We believe in the power of mentorship and "paying it forward". We encourage experienced individuals to serve as mentors, providing guidance and support to those who are new to the field.
-                        </p>
-                  </div>
-                  <!-- Value 4 -->
-                  <div class="value value-4">
-                    <div class="value-icon">
-                        <img class="animated-icon" src="{% static 'images/diploma.gif' %}" alt="animated diploma"/>
+            </dialog>
+
+            <button id="cdBtn" class="cdBtn">Learn More</button> -->
+
+          </div>
+        </section>
+
+        <!-- Core Values Section -->
+        <section class="values">
+          <div class="values-container">
+            <h2 class="values-title">Our Core <span class="values-script">Values</span></h2>
+              <!-- Start values grid -->
+              <div class="values-grid">
+                <div class="values-img">
+                        <img class="group-img" src="{% static 'images/group-pic.jpg' %}" alt="group picture"/>
                     </div>
-                    <h3 class="value-heading">Professional Development</h3>
-                        <p class="value-description">
-                            We emulate industry standards and workflows, facilitating professional development that fosters confidence and growth in everyday processes.
-                        </p>
-                  </div>
-                  <!-- Value 5 -->
-                  <div class="value value-5">
-                    <div class="value-icon">
-                        <img class="animated-icon" src="{% static 'images/data-analysis.gif' %}" alt="mountain top"/>
+                      <!-- Value 1 -->
+                      <div class="value value-1">
+                        <div class="value-icon">
+                            <img class="animated-icon" src="{% static 'images/teamwork.gif' %}" alt="animated icon"/>
+                        </div>
+                          <h3 class="value-heading">
+                              Collaboration + Teamwork
+                          </h3>
+                            <p class="value-description">
+                                By working together and leveraging everyone's strengths, we amplify our impact and create innovative solutions that address the unique needs of non-profits and aspiring developers.
+                            </p>
+                      </div>
+                      <!-- Value 2 -->
+                      <div class="value value-2">
+                        <div class="value-icon">
+                            <img class="animated-icon" src="{% static 'images/idea.gif' %}" alt="lightbulb"/>
+                        </div>
+                        <h3 class="value-heading">Inclusivity</h3>
+                            <p class="value-description">
+                                We welcome diverse perspectives, recognizing that a variety of perspectives, backgrounds, and experiences drive creativity and lead to well-rounded solutions.
+                            </p>
+                      </div>
+                      <!-- Value 3 -->
+                      <div class="value value-3">
+                        <div class="value-icon">
+                            <img class="animated-icon" src="{% static 'images/handshake.gif' %}" alt="animated handshake"/>
+                        </div>
+                        <h3 class="value-heading">Mentorship</h3>
+                            <p class="value-description">
+                                We believe in the power of mentorship and "paying it forward". We encourage experienced individuals to serve as mentors, providing guidance and support to those who are new to the field.
+                            </p>
+                      </div>
+                      <!-- Value 4 -->
+                      <div class="value value-4">
+                        <div class="value-icon">
+                            <img class="animated-icon" src="{% static 'images/diploma.gif' %}" alt="animated diploma"/>
+                        </div>
+                        <h3 class="value-heading">Professional Development</h3>
+                            <p class="value-description">
+                                We emulate industry standards and workflows, facilitating professional development that fosters confidence and growth in everyday processes.
+                            </p>
+                      </div>
+                      <!-- Value 5 -->
+                      <div class="value value-5">
+                        <div class="value-icon">
+                            <img class="animated-icon" src="{% static 'images/data-analysis.gif' %}" alt="mountain top"/>
                     </div>
                     <h3 class="value-heading">Community-centric</h3>
                         <p class="value-description">
@@ -122,8 +118,8 @@
                   </div>
               </div>
           </div>
-        </section>
-        <!-- End of Values Section -->
+      </section>
+      <!-- End of Values Section -->
 
         <!-- Card Component Section -->
         <section class="cards">
@@ -132,20 +128,20 @@
             <!-- Card One -->
             <article class="card">
               <div class="card-top">
-                <img src="{% static 'images/card-img-1.jpg' %}" alt="two people looking at code on laptop" />
-              </div>
-              <div class="card-bottom">
-                <h2>Gain Experience</h2>
-                  <p class="card-content">
-                    Now more than ever, it's hard to gain experience in the Tech Industry without already having some. Our team comes together to build, collaborate, and gain valuable industry-level experience to add to portfolios.
-                  </p>
-                  <a class="link-card" href="https://github.com/CD-Squared-Tech" target="_blank"><button class="btn-card">Learn More</button></a>
-              </div>
-            </article>
-            <!-- Card Two -->
-            <article class="card">
-              <div class="card-top">
-                  <img src="{% static 'images/card-img-2.jpg' %}" alt="two people looking at code on a laptop" />
+                        <img src="{% static 'images/card-img-1.jpg' %}" alt="two people looking at code on laptop" />
+                    </div>
+                    <div class="card-bottom">
+                        <h2>Gain Experience</h2>
+                            <p class="card-content">
+                                Now more than ever, it's hard to gain experience in the Tech Industry without already having some. Our team comes together to build, collaborate, and gain valuable industry-level experience to add to portfolios.
+                            </p>
+                            <a class="link-card" href="https://github.com/CD-Squared-Tech" target="_blank"><button class="btn-card">Learn More</button></a>
+                    </div>
+                </article>
+                <!-- Card Two -->
+                <article class="card">
+                    <div class="card-top">
+                            <img src="{% static 'images/card-img-2.jpg' %}" alt="two people looking at code on a laptop" />
               </div>
               <div class="card-bottom">
                 <h2>Build Community</h2>
@@ -165,13 +161,13 @@
         <section class="cd-split-section flex-reverse">
           <img src="{% static 'images/meeting-1.jpg' %}" alt=""/>
           <div class="cd-split-text">
-            <h1>Header</h1>
-            <p>This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // </p>
+            <h1>Together, We Support, Learn, and Grow</h1>
+            <p>Together, we embark on an exciting journey, each line of code we write and every challenge we overcome bringing us closer to realizing our dreams in the tech industry. With our collective passion, unwavering dedication, and a supportive network, we're forging our path in this ever-evolving field, ready to make a lasting impact and shape the future of technology.</p>
           </div>
       </section>
 
       <!-- Contact Form Section -->
-      <section class="contact">
+      <section id="contact" class="contact">
         <div class="form">
             <h1>Contact Us</h1>
             {% if form_submitted %}

@@ -29,7 +29,10 @@
             </nav>
         </header>
         {% block content %}{% endblock %}
-        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        <!-- Javascript Links -->
+        <!-- NOTE: Commenting out the script to fix 'Uncaught TypeError'... -->
+        <!-- ...until script it being used. -->
+        <!-- <script type="text/javascript" async src="https://tenor.com/embed.js"></script> -->
         <script type="module" src="{% static 'scripts/index.js' %}"></script>
         <script>
             function onSubmit(token) {

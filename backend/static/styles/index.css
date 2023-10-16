@@ -841,7 +841,8 @@ button.btn-card:hover {
 }
 
 .success-message {
-  color: white
+  color: white;
+  font-weight: bold;
 }
 
 input:focus, textarea:focus {
