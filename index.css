@@ -41,7 +41,7 @@ body {
   background-color: var(--lighterBlueSteel);
 }
 
-p, label {
+p {
   font-family: 'Lato', sans-serif;
 }
 
@@ -67,6 +67,41 @@ h1 {
   cursor: pointer;
 }
 
+/* Navbar */
+.navbar {
+  background-color: var(--darkBlueSteel);
+  color: white;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0, auto;
+}
+
+.navbar li {
+  float: right;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  background-color: var(--blueSteel);
+  border-radius: 3px;
+}
+
 /* Sidebar and Content Wrapper */
 .mainPageWrapper {
   display: flex;
@@ -86,11 +121,6 @@ h1 {
   background-color: var(--ligherBlueSteel);
   box-shadow: 0px 0px 15px var(--darkBlueSteel);
   padding-top: 35px;
-  transition: all 150ms linear;
-}
-
-.shortSidebarWrapper {
-  height: 85px !important;
 }
 
 .sidebar {
@@ -113,7 +143,6 @@ h1 {
 
 .socials {
   width: 70%;
-  overflow: hidden;
 }
 
 .socials ul {
@@ -124,16 +153,6 @@ h1 {
   margin: auto;
   justify-content: space-evenly;
   width: 100%;
-}
-
-.socials-list {
-  opacity: 1;
-  transition: all 250ms linear;
-}
-
-.socials-list-hidden {
-  opacity: 0;
-  margin-top: -150px;
 }
 
 .socials li {
@@ -149,14 +168,6 @@ h1 {
 
 .fa-facebook-f {
   padding: 0 4px;
-}
-
-.meetup-icon {
-  padding: 7px !important;
-}
-
-.fa-meetup {
-  font-size: 23px;
 }
 
 .socials ul a {
@@ -191,11 +202,6 @@ h1 {
   width: 100%;
   background-color: var(--ligherBlueSteel);
   position: static;
-  transition: all 350ms linear;
-}
-
-.shortMainContentWrapper {
-  margin-top: 85px !important;
 }
 
 .content {
@@ -212,7 +218,7 @@ h1 {
   min-height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(./resources/images/hero-background.jpg);
+  background-image: url(../images/hero-background.jpg);
   justify-content: center;
   align-items: start;
 }
@@ -233,8 +239,8 @@ h1 {
   display: flex;
   flex-direction: column;
   max-width: 80%;
-  /* text-align: center;
-  align-items: center; */
+  text-align: center;
+  align-items: center;
 }
 
 .heroContent,
@@ -246,11 +252,11 @@ p {
 }
 
 .heroContent h1 {
-  font-size: 5vw;
+  font-size: 7vw;
   font-family: "Baskervville", serif;
   margin: 0px;
-  /* text-decoration: underline;
-  font-style: italic; */
+  text-decoration: underline;
+  font-style: italic;
 }
 
 .heroContent p {
@@ -298,11 +304,6 @@ p {
 
   .horizontal-logo {
     width: 180px;
-    transition: all 250ms ease-in-out;
-  }
-
-  .small-horizontal-logo {
-    width: 125px;
   }
 
   .logo-container {
@@ -311,7 +312,6 @@ p {
 
   .socials {
     max-width: 150px;
-
   }
 
   .socials ul {
@@ -322,14 +322,6 @@ p {
     padding: 5px;
     border-radius: 3px;
     font-size: 1rem;
-  }
-
-  .meetup-icon {
-    padding: 3px !important;
-  }
-  
-  .fa-meetup {
-    font-size: 21px;
   }
 
   .mainPageWrapper {
@@ -394,10 +386,6 @@ p {
 
   .cd-split-section img {
     max-width: 90%;
-  }
-
-  .group-img {
-    display: none;
   }
 }
 /* Media query breakpoints less than 515px */
@@ -675,13 +663,11 @@ img {
 p.card-content {
   font-size: 1rem;
   line-height: 1.35;
-  /* font-family: "Noto Sans", sans-serif;
-  text-align: justify; */
+  font-family: "Noto Sans", sans-serif;
+  text-align: justify;
   word-spacing: -0.05em;
   margin-top: .5em;
   height: 100px;
-  font-weight: 700;
-
 }
 
 button.btn-card {
@@ -805,7 +791,7 @@ button.btn-card:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(./resources/images/contact-background.jpg);
+  background: url(../images/contact-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -839,7 +825,7 @@ button.btn-card:hover {
 .contact form label {
   display: inline-block;
   width: 90px;
-  font-weight: 900;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .contact form li {
@@ -854,6 +840,11 @@ button.btn-card:hover {
   border-radius: 3px;
 }
 
+.success-message {
+  color: white;
+  font-weight: bold;
+}
+
 input:focus, textarea:focus {
   border-color: var(--lightBlueSteel);
 }
@@ -865,6 +856,7 @@ input:focus, textarea:focus {
   border-radius: 3px;
   margin-top: .5rem;
   padding: .5rem 2rem;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
   cursor: pointer;
   transition: .5s ease;
