@@ -55,3 +55,36 @@ if(viewportWidth <= 768) {
   })
 }
 
+// Contact form script
+const form = document.getElementById('contact-form'); // Get the form element
+const successMessageDiv = document.getElementById('success-message'); // Get the success message div element
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault(); // Prevent the default form submission behavior
+  const formData = new FormData(form); // Collect form data
+  fetch('http://localhost:8000/api/contact/', {
+    method: 'POST',
+    body: formData,
+  })
+    .then(response => {
+        if (response.ok) {
+          // Handle success
+          console.log('Data sent successfully');
+          // Reset form
+          form.reset();
+          // Display the success message
+          successMessageDiv.textContact = 'Form submitted successfully!';
+        } else {
+          // Handle error
+          console.error('Data submission failed');
+          // Clear the success message in case of an error
+          successMessageDiv.textContent = '';
+        }
+    })
+    .catch(error => {
+      console.error('Network error:', error);
+      // Clear the success message in case of an error
+      successMessageDiv.textContent = '';
+    });
+});
+
