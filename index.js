@@ -73,12 +73,12 @@ form.addEventListener('submit', function (e) {
           // Reset form
           form.reset();
           // Display the success message
-          successMessageDiv.textContact = 'Form submitted successfully!';
+          successMessageDiv.innerHTML = 'Form submitted successfully!';
         } else {
           // Handle error
           console.error('Data submission failed');
           // Clear the success message in case of an error
-          successMessageDiv.textContent = '';
+          successMessageDiv.innerHTML = '';
         }
     })
     .catch(error => {
